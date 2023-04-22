@@ -1,0 +1,383 @@
+digraph NFA {
+	0 [label="#" fontname="Microsoft YaHei"]
+	1 [label=<全局变量定义> fontname="Microsoft YaHei"]
+	0 -> 1
+	2 [label=<定义语句> fontname="Microsoft YaHei"]
+	1 -> 2
+	3 [label=<参数类型> fontname="Microsoft YaHei"]
+	2 -> 3
+	4 [label=<类型说明> fontname="Microsoft YaHei"]
+	3 -> 4
+	5 [label=int fontname="Microsoft YaHei"]
+	4 -> 5
+	6 [label=<表达式> fontname="Microsoft YaHei"]
+	2 -> 6
+	7 [label=<标识符> fontname="Microsoft YaHei"]
+	6 -> 7
+	8 [label="identifier:a" fontname="Microsoft YaHei"]
+	7 -> 8
+	9 [label=<表达式2> fontname="Microsoft YaHei"]
+	6 -> 9
+	10 [label=<表达式3> fontname="Microsoft YaHei"]
+	6 -> 10
+	11 [label=<赋值语句> fontname="Microsoft YaHei"]
+	2 -> 11
+	12 [label=<等于> fontname="Microsoft YaHei"]
+	11 -> 12
+	13 [label="=" fontname="Microsoft YaHei"]
+	12 -> 13
+	14 [label=<表达式> fontname="Microsoft YaHei"]
+	11 -> 14
+	15 [label=<数字> fontname="Microsoft YaHei"]
+	14 -> 15
+	16 [label="number:1" fontname="Microsoft YaHei"]
+	15 -> 16
+	17 [label=<参数传递> fontname="Microsoft YaHei"]
+	2 -> 17
+	18 [label=";" fontname="Microsoft YaHei"]
+	2 -> 18
+	19 [label=<函数> fontname="Microsoft YaHei"]
+	0 -> 19
+	20 [label=<函数定义> fontname="Microsoft YaHei"]
+	19 -> 20
+	21 [label=<函数声明> fontname="Microsoft YaHei"]
+	20 -> 21
+	22 [label=def fontname="Microsoft YaHei"]
+	21 -> 22
+	23 [label=<类型说明> fontname="Microsoft YaHei"]
+	20 -> 23
+	24 [label=int fontname="Microsoft YaHei"]
+	23 -> 24
+	25 [label=<标识符> fontname="Microsoft YaHei"]
+	20 -> 25
+	26 [label="identifier:main" fontname="Microsoft YaHei"]
+	25 -> 26
+	27 [label="(" fontname="Microsoft YaHei"]
+	20 -> 27
+	28 [label=<参数定义> fontname="Microsoft YaHei"]
+	20 -> 28
+	29 [label=")" fontname="Microsoft YaHei"]
+	20 -> 29
+	30 [label="{" fontname="Microsoft YaHei"]
+	20 -> 30
+	31 [label=<函数块> fontname="Microsoft YaHei"]
+	20 -> 31
+	32 [label=<语句> fontname="Microsoft YaHei"]
+	31 -> 32
+	33 [label=<定义语句> fontname="Microsoft YaHei"]
+	32 -> 33
+	34 [label=<参数类型> fontname="Microsoft YaHei"]
+	33 -> 34
+	35 [label=<类型说明> fontname="Microsoft YaHei"]
+	34 -> 35
+	36 [label=int fontname="Microsoft YaHei"]
+	35 -> 36
+	37 [label=<表达式> fontname="Microsoft YaHei"]
+	33 -> 37
+	38 [label=<标识符> fontname="Microsoft YaHei"]
+	37 -> 38
+	39 [label="identifier:result" fontname="Microsoft YaHei"]
+	38 -> 39
+	40 [label=<表达式2> fontname="Microsoft YaHei"]
+	37 -> 40
+	41 [label=<表达式3> fontname="Microsoft YaHei"]
+	37 -> 41
+	42 [label=<赋值语句> fontname="Microsoft YaHei"]
+	33 -> 42
+	43 [label=<参数传递> fontname="Microsoft YaHei"]
+	33 -> 43
+	44 [label=";" fontname="Microsoft YaHei"]
+	33 -> 44
+	45 [label=<函数块> fontname="Microsoft YaHei"]
+	31 -> 45
+	46 [label=<语句> fontname="Microsoft YaHei"]
+	45 -> 46
+	47 [label=<定义语句> fontname="Microsoft YaHei"]
+	46 -> 47
+	48 [label=<参数类型> fontname="Microsoft YaHei"]
+	47 -> 48
+	49 [label=<类型说明> fontname="Microsoft YaHei"]
+	48 -> 49
+	50 [label=int fontname="Microsoft YaHei"]
+	49 -> 50
+	51 [label=<表达式> fontname="Microsoft YaHei"]
+	47 -> 51
+	52 [label=<标识符> fontname="Microsoft YaHei"]
+	51 -> 52
+	53 [label="identifier:N" fontname="Microsoft YaHei"]
+	52 -> 53
+	54 [label=<表达式2> fontname="Microsoft YaHei"]
+	51 -> 54
+	55 [label=<表达式3> fontname="Microsoft YaHei"]
+	51 -> 55
+	56 [label=<赋值语句> fontname="Microsoft YaHei"]
+	47 -> 56
+	57 [label=<等于> fontname="Microsoft YaHei"]
+	56 -> 57
+	58 [label="=" fontname="Microsoft YaHei"]
+	57 -> 58
+	59 [label=<表达式> fontname="Microsoft YaHei"]
+	56 -> 59
+	60 [label=<标识符> fontname="Microsoft YaHei"]
+	59 -> 60
+	61 [label="identifier:read" fontname="Microsoft YaHei"]
+	60 -> 61
+	62 [label=<表达式2> fontname="Microsoft YaHei"]
+	59 -> 62
+	63 [label=<表达式3> fontname="Microsoft YaHei"]
+	59 -> 63
+	64 [label=<参数传递> fontname="Microsoft YaHei"]
+	47 -> 64
+	65 [label="(" fontname="Microsoft YaHei"]
+	64 -> 65
+	66 [label=<参数传递2> fontname="Microsoft YaHei"]
+	64 -> 66
+	67 [label=")" fontname="Microsoft YaHei"]
+	64 -> 67
+	68 [label=";" fontname="Microsoft YaHei"]
+	47 -> 68
+	69 [label=<函数块> fontname="Microsoft YaHei"]
+	45 -> 69
+	70 [label=<语句> fontname="Microsoft YaHei"]
+	69 -> 70
+	71 [label=<定义语句> fontname="Microsoft YaHei"]
+	70 -> 71
+	72 [label=<参数类型> fontname="Microsoft YaHei"]
+	71 -> 72
+	73 [label=<类型说明> fontname="Microsoft YaHei"]
+	72 -> 73
+	74 [label=int fontname="Microsoft YaHei"]
+	73 -> 74
+	75 [label=<表达式> fontname="Microsoft YaHei"]
+	71 -> 75
+	76 [label=<标识符> fontname="Microsoft YaHei"]
+	75 -> 76
+	77 [label="identifier:M" fontname="Microsoft YaHei"]
+	76 -> 77
+	78 [label=<表达式2> fontname="Microsoft YaHei"]
+	75 -> 78
+	79 [label=<表达式3> fontname="Microsoft YaHei"]
+	75 -> 79
+	80 [label=<赋值语句> fontname="Microsoft YaHei"]
+	71 -> 80
+	81 [label=<等于> fontname="Microsoft YaHei"]
+	80 -> 81
+	82 [label="=" fontname="Microsoft YaHei"]
+	81 -> 82
+	83 [label=<表达式> fontname="Microsoft YaHei"]
+	80 -> 83
+	84 [label=<标识符> fontname="Microsoft YaHei"]
+	83 -> 84
+	85 [label="identifier:read" fontname="Microsoft YaHei"]
+	84 -> 85
+	86 [label=<表达式2> fontname="Microsoft YaHei"]
+	83 -> 86
+	87 [label=<表达式3> fontname="Microsoft YaHei"]
+	83 -> 87
+	88 [label=<参数传递> fontname="Microsoft YaHei"]
+	71 -> 88
+	89 [label="(" fontname="Microsoft YaHei"]
+	88 -> 89
+	90 [label=<参数传递2> fontname="Microsoft YaHei"]
+	88 -> 90
+	91 [label=")" fontname="Microsoft YaHei"]
+	88 -> 91
+	92 [label=";" fontname="Microsoft YaHei"]
+	71 -> 92
+	93 [label=<函数块> fontname="Microsoft YaHei"]
+	69 -> 93
+	94 [label=<语句> fontname="Microsoft YaHei"]
+	93 -> 94
+	95 [label=<条件语句> fontname="Microsoft YaHei"]
+	94 -> 95
+	96 [label=<IF语句> fontname="Microsoft YaHei"]
+	95 -> 96
+	97 [label=<如果> fontname="Microsoft YaHei"]
+	96 -> 97
+	98 [label=if fontname="Microsoft YaHei"]
+	97 -> 98
+	99 [label="(" fontname="Microsoft YaHei"]
+	96 -> 99
+	100 [label=<判断条件> fontname="Microsoft YaHei"]
+	96 -> 100
+	101 [label=<表达式> fontname="Microsoft YaHei"]
+	100 -> 101
+	102 [label=<标识符> fontname="Microsoft YaHei"]
+	101 -> 102
+	103 [label="identifier:M" fontname="Microsoft YaHei"]
+	102 -> 103
+	104 [label=<表达式2> fontname="Microsoft YaHei"]
+	101 -> 104
+	105 [label=<表达式3> fontname="Microsoft YaHei"]
+	101 -> 105
+	106 [label=<比较符号> fontname="Microsoft YaHei"]
+	100 -> 106
+	107 [label=">=" fontname="Microsoft YaHei"]
+	106 -> 107
+	108 [label=<项> fontname="Microsoft YaHei"]
+	100 -> 108
+	109 [label=<标识符> fontname="Microsoft YaHei"]
+	108 -> 109
+	110 [label="identifier:N" fontname="Microsoft YaHei"]
+	109 -> 110
+	111 [label=")" fontname="Microsoft YaHei"]
+	96 -> 111
+	112 [label="{" fontname="Microsoft YaHei"]
+	96 -> 112
+	113 [label=<函数块> fontname="Microsoft YaHei"]
+	96 -> 113
+	114 [label=<语句> fontname="Microsoft YaHei"]
+	113 -> 114
+	115 [label=<赋值/执行语句> fontname="Microsoft YaHei"]
+	114 -> 115
+	116 [label=<标识符> fontname="Microsoft YaHei"]
+	115 -> 116
+	117 [label="identifier:result" fontname="Microsoft YaHei"]
+	116 -> 117
+	118 [label=<赋值语句> fontname="Microsoft YaHei"]
+	115 -> 118
+	119 [label=<等于> fontname="Microsoft YaHei"]
+	118 -> 119
+	120 [label="=" fontname="Microsoft YaHei"]
+	119 -> 120
+	121 [label=<表达式> fontname="Microsoft YaHei"]
+	118 -> 121
+	122 [label=<标识符> fontname="Microsoft YaHei"]
+	121 -> 122
+	123 [label="identifier:M" fontname="Microsoft YaHei"]
+	122 -> 123
+	124 [label=<表达式2> fontname="Microsoft YaHei"]
+	121 -> 124
+	125 [label=<表达式3> fontname="Microsoft YaHei"]
+	121 -> 125
+	126 [label=<参数传递> fontname="Microsoft YaHei"]
+	115 -> 126
+	127 [label=";" fontname="Microsoft YaHei"]
+	115 -> 127
+	128 [label=<函数块> fontname="Microsoft YaHei"]
+	113 -> 128
+	129 [label="}" fontname="Microsoft YaHei"]
+	96 -> 129
+	130 [label=<ELSE语句> fontname="Microsoft YaHei"]
+	96 -> 130
+	131 [label=<否则> fontname="Microsoft YaHei"]
+	130 -> 131
+	132 [label=else fontname="Microsoft YaHei"]
+	131 -> 132
+	133 [label=<ELSE语句2> fontname="Microsoft YaHei"]
+	130 -> 133
+	134 [label="{" fontname="Microsoft YaHei"]
+	133 -> 134
+	135 [label=<函数块> fontname="Microsoft YaHei"]
+	133 -> 135
+	136 [label=<语句> fontname="Microsoft YaHei"]
+	135 -> 136
+	137 [label=<赋值/执行语句> fontname="Microsoft YaHei"]
+	136 -> 137
+	138 [label=<标识符> fontname="Microsoft YaHei"]
+	137 -> 138
+	139 [label="identifier:result" fontname="Microsoft YaHei"]
+	138 -> 139
+	140 [label=<赋值语句> fontname="Microsoft YaHei"]
+	137 -> 140
+	141 [label=<等于> fontname="Microsoft YaHei"]
+	140 -> 141
+	142 [label="=" fontname="Microsoft YaHei"]
+	141 -> 142
+	143 [label=<表达式> fontname="Microsoft YaHei"]
+	140 -> 143
+	144 [label=<标识符> fontname="Microsoft YaHei"]
+	143 -> 144
+	145 [label="identifier:N" fontname="Microsoft YaHei"]
+	144 -> 145
+	146 [label=<表达式2> fontname="Microsoft YaHei"]
+	143 -> 146
+	147 [label=<表达式3> fontname="Microsoft YaHei"]
+	143 -> 147
+	148 [label=<参数传递> fontname="Microsoft YaHei"]
+	137 -> 148
+	149 [label=";" fontname="Microsoft YaHei"]
+	137 -> 149
+	150 [label=<函数块> fontname="Microsoft YaHei"]
+	135 -> 150
+	151 [label="}" fontname="Microsoft YaHei"]
+	133 -> 151
+	152 [label=<函数块> fontname="Microsoft YaHei"]
+	93 -> 152
+	153 [label=<语句> fontname="Microsoft YaHei"]
+	152 -> 153
+	154 [label=<赋值/执行语句> fontname="Microsoft YaHei"]
+	153 -> 154
+	155 [label=<标识符> fontname="Microsoft YaHei"]
+	154 -> 155
+	156 [label="identifier:a" fontname="Microsoft YaHei"]
+	155 -> 156
+	157 [label=<赋值语句> fontname="Microsoft YaHei"]
+	154 -> 157
+	158 [label=<等于> fontname="Microsoft YaHei"]
+	157 -> 158
+	159 [label="=" fontname="Microsoft YaHei"]
+	158 -> 159
+	160 [label=<表达式> fontname="Microsoft YaHei"]
+	157 -> 160
+	161 [label=<标识符> fontname="Microsoft YaHei"]
+	160 -> 161
+	162 [label="identifier:result" fontname="Microsoft YaHei"]
+	161 -> 162
+	163 [label=<表达式2> fontname="Microsoft YaHei"]
+	160 -> 163
+	164 [label=<运算符> fontname="Microsoft YaHei"]
+	163 -> 164
+	165 [label="+" fontname="Microsoft YaHei"]
+	164 -> 165
+	166 [label=<项> fontname="Microsoft YaHei"]
+	163 -> 166
+	167 [label=<数字> fontname="Microsoft YaHei"]
+	166 -> 167
+	168 [label="number:100" fontname="Microsoft YaHei"]
+	167 -> 168
+	169 [label=<表达式3> fontname="Microsoft YaHei"]
+	160 -> 169
+	170 [label=<参数传递> fontname="Microsoft YaHei"]
+	154 -> 170
+	171 [label=";" fontname="Microsoft YaHei"]
+	154 -> 171
+	172 [label=<函数块> fontname="Microsoft YaHei"]
+	152 -> 172
+	173 [label=<语句> fontname="Microsoft YaHei"]
+	172 -> 173
+	174 [label=<赋值/执行语句> fontname="Microsoft YaHei"]
+	173 -> 174
+	175 [label=<标识符> fontname="Microsoft YaHei"]
+	174 -> 175
+	176 [label="identifier:write" fontname="Microsoft YaHei"]
+	175 -> 176
+	177 [label=<赋值语句> fontname="Microsoft YaHei"]
+	174 -> 177
+	178 [label=<参数传递> fontname="Microsoft YaHei"]
+	174 -> 178
+	179 [label="(" fontname="Microsoft YaHei"]
+	178 -> 179
+	180 [label=<参数传递2> fontname="Microsoft YaHei"]
+	178 -> 180
+	181 [label=<表达式> fontname="Microsoft YaHei"]
+	180 -> 181
+	182 [label=<标识符> fontname="Microsoft YaHei"]
+	181 -> 182
+	183 [label="identifier:a" fontname="Microsoft YaHei"]
+	182 -> 183
+	184 [label=<表达式2> fontname="Microsoft YaHei"]
+	181 -> 184
+	185 [label=<表达式3> fontname="Microsoft YaHei"]
+	181 -> 185
+	186 [label=")" fontname="Microsoft YaHei"]
+	178 -> 186
+	187 [label=";" fontname="Microsoft YaHei"]
+	174 -> 187
+	188 [label=<函数块> fontname="Microsoft YaHei"]
+	172 -> 188
+	189 [label="}" fontname="Microsoft YaHei"]
+	20 -> 189
+	190 [label=<函数> fontname="Microsoft YaHei"]
+	19 -> 190
+}

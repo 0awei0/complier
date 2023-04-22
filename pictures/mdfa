@@ -1,0 +1,20 @@
+digraph NFA {
+	graph [rankdir=LR]
+	node [shape=plaintext]
+	start
+	node [shape=doublecircle]
+	F
+	node [shape=circle]
+	A -> B [label=a]
+	B -> B [label=b]
+	B -> C [label=a]
+	C -> B [label=b]
+	C -> D [label=a]
+	D -> D [label=a]
+	D -> E [label=b]
+	E -> C [label=a]
+	E -> F [label=b]
+	F -> B [label=b]
+	F -> C [label=a]
+	start -> A
+}

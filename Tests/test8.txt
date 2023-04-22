@@ -1,0 +1,22 @@
+// 计算fabonacci数: 1, 1, 2, 3, 5, 8, 13...
+
+def int main() {
+    int n;
+    n = read();
+
+    int f1 = 1;
+    int f2 = 1;
+    int i = 0;
+    int f3 = 1;
+
+    for (i = 3; i <= n; i = i+1) {
+        f3 = f1 + f2;
+        f1 = f2;
+        f2 = f3;
+    }
+    write(f3);
+}
+
+
+
+
